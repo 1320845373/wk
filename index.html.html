@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎使用番茄网课下单系统</title>
+    <style>
+        /* 背景及全局样式 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0; /* 清除默认边距 */
+            background-color: #add8e6; /* 浅蓝色背景 */
+            font-family: Arial, sans-serif;
+        }
+        /* 容器样式 */
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95); /* 微透明白色背景 */
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%; /* 自适应手机 */
+            max-width: 400px;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* 标题及段落 */
+        h1 {
+            color: #333; /* 标题颜色 */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666; /* 段落颜色 */
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        /* 按钮样式 */
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745; /* 绿色按钮 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* 按钮宽度为100% */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #218838; /* 悬停时的深绿色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎使用番茄网课下单系统</h1>
+        <p>点击下面的按钮进行下单：</p>
+        <button onclick="window.location.href='iframe.html'">下单</button>
+    </div>
+</body>
+</html>
